@@ -75,9 +75,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 - **BERT:** Fine-tuning pre-trained DistilBERT
 
 ### 4. 🎯 Training
-- Training both models
-- Cross-validation
-- Hyperparameter optimization
 
 ### 5. 📊 Evaluation
 - Performance metrics
@@ -114,13 +111,6 @@ if __name__ == "__main__":
 ```
 
 ### Main Functions
-```python
-# Results visualization
-visualize_results(lstm_trainer, results)
-
-# Final summary
-print_final_summary(results)
-```
 
 ## 📋 Detailed Features
 
@@ -178,12 +168,6 @@ For any questions or issues:
 - **BERT fine-tuning** with DistilBERT
 - **Visualization functions** without subplots
 - **Comprehensive evaluation** metrics
-
-### Key Functions
-```python
-visualize_results(lstm_trainer, results)  # Generate visualizations
-print_final_summary(results)              # Display final comparison
-```
 
 ## 🚀 Getting Started
 
