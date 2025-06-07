@@ -127,7 +127,8 @@ The The project includes several visualizations:
 Choose **BERT** for optimal overall performance, especially if detecting as many spam cases as possible is critical.
 
 ---
-## 👤 Author
-**Andriana's Project**
 
-🔗 GitHub: [https://github.com/Andrianiniaina/0-DeepLearning-Project]
+## 👤 Author
+
+Project by **Andriana**  
+🔗 GitHub: [https://github.com/Andrianiniaina/0-Machine-Learning-Projects]
