@@ -1,7 +1,5 @@
 # 🚫 AT&T Spam Detection - Deep Learning
 
-![AT&T Logo](img/ATT-Logo.png)
-
 ## 📋 Project Overview
 
 This project presents an automated spam detection solution for AT&T, using deep learning techniques to protect users from constant exposure to unwanted messages.
