@@ -4,195 +4,129 @@
 
 This project presents an automated spam detection solution for AT&T, using deep learning techniques to protect users from constant exposure to unwanted messages.
 
-**Goal:** Create a spam detector capable of automatically flagging spam messages as soon as they arrive, based solely on the text message content.
+**Goal:**
+To create a spam detector capable of automatically flagging unwanted messages as they arrive, based solely on the content of the SMS. 
 
 ## 🎯 Features
 
-- **Automatic spam detection** in real-time
-- **Model comparison** LSTM vs BERT
-- **Detailed visualizations** of performance
-- **Comprehensive metrics** evaluation
-- **Simple and intuitive** interface
+- Real-time automatic spam detection
+- LSTM vs. BERT model comparison
+- Detailed performance visualizations
+- Comprehensive metrics evaluation
+- Simple and intuitive interface
+  
+## 🔧 Technologies used
 
-## 🔧 Technologies Used
-
-### Main Libraries
-- **TensorFlow/Keras** - LSTM models
-- **PyTorch** - Deep learning infrastructure
-- **Transformers (Hugging Face)** - BERT models
-- **Scikit-learn** - Metrics and preprocessing
-- **Pandas/NumPy** - Data manipulation
-
-### Implemented Models
-- **LSTM** (Long Short-Term Memory)
-- **DistilBERT** (Transfer Learning)
-
-## 📊 Project Structure
-
+### Implemented models
+- LSTM (Long Short-Term Memory)
+- DistilBERT (Transfer learning)
+## 📊 Project structure
 ```
-├── main.ipynb                 # Main notebook
+├── main.ipynb # Main Notebook
 ├── img/
-│   └── ATT-Logo.png          # AT&T Logo
-├── data/                     # Message dataset
-└── README.md                 # Documentation
+│ └── ATT-Logo.png # AT&T Logo
+├── data/ # Message Dataset
+└── README.md # Documentation
 ```
 
-## 🚀 Installation and Setup
-
-### Prerequisites
-```bash
-pip install torch torchvision torchaudio
-pip install transformers
-pip install tensorflow
-pip install scikit-learn
-pip install pandas numpy
-pip install matplotlib seaborn
-pip install tqdm
-```
-
-### GPU/CPU Configuration
-The code automatically detects GPU availability:
-```python
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-```
-
+## 🚀 Technologies and Libraries
+- `torch`
+- `torchvision`
+- `torchaudio`
+- `transformers`
+- `tensorflow`
+- `scikit-learn`
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `tqdm`
+  
 ## 📈 Processing Pipeline
 
-### 1. 📊 Data Loading and Exploration
-- Import message dataset
-- Exploratory data analysis
-- Descriptive statistics
-
-### 2. ⚙️ Preprocessing
-- **For LSTM:** Tokenization, padding, sequences
-- **For BERT:** BERT tokenization, attention masks
-- Text cleaning and normalization
-
-### 3. 🤖 Modeling
-- **LSTM:** Custom recurrent architecture
-- **BERT:** Fine-tuning pre-trained DistilBERT
-
-### 4. 🎯 Training
-
-### 5. 📊 Evaluation
-- Performance metrics
-- Confusion matrices
-- Model comparison
+### Main Components
+- **Data Preprocessing** for LSTM and BERT
+- **Custom LSTM Architecture Implementation**
+- **BERT Optimization** with DistilBERT
+- **Visualization Features** without Subgraphs
+- **Comprehensive Evaluation Metrics**
 
 ## 📈 Performance Metrics
 
-### Comparative Results
-| Model | Accuracy | Precision | Recall | F1-Score |
-|-------|----------|-----------|--------|----------|
-| LSTM  | 0.9722   | 0.9917    | 0.7987 | 0.8848   |
-| BERT  | 0.9821   | 0.9708    | 0.8926 | 0.9301   |
+### 🏆 Recommended model: BERT
 
-### 🏆 Recommended Model: BERT
 - **Best overall accuracy** (98.21%)
-- **Superior F1-Score** (0.9301)
+- **Higher F1 score** (0.9301)
 - **High recall** for spam detection
 - **Balanced performance** between precision and recall
-
+  
 ## 🎨 Visualizations
 
-The project includes several visualizations:
-- **Confusion matrices** for each model
-- **Comparative charts** of metrics
-- **Performance evolution** during training
+The The project includes several visualizations:
+- Confusion matrices for each model
+- Comparison graphs of metrics
+- Performance trends during training
+- 
+### Main features
 
-## 🔧 Usage
+## 📋 Detailed features
 
-### Complete Execution
-```python
-if __name__ == "__main__":
-    main()
-```
+### Intelligent preprocessing
 
-### Main Functions
-
-## 📋 Detailed Features
-
-### Intelligent Preprocessing
 - Automatic text cleaning
 - Special character handling
 - Sequence normalization
+  
+### Robust models
 
-### Robust Models
-- **LSTM:** Captures temporal dependencies
-- **BERT:** Advanced contextual understanding
+- LSTM: Temporal dependency capture
+- BERT: Advanced contextual understanding
 
-### Comprehensive Evaluation
-- Accuracy, Precision, Recall, F1-Score
+### Evaluation
+- Accuracy, Precision, Recall, F1 score
 - Detailed confusion matrices
 - Visual comparisons
+  
+## 🎯 Use cases
 
-## 🎯 Use Cases
+### Production deployment
 
-### Production Deployment
-- Integration into AT&T systems
+- Integration with AT&T systems
 - Real-time message filtering
 - Automatic user protection
+  
+### Potential applications
 
-### Potential Applications
 - Email filtering
 - Content moderation
 - Communication security
+  
+## 🔮 Future improvements
 
-## 🔮 Future Improvements
+- **Newer Models** (GPT, T5)
+- **Multilingual Detection**
+- **Real-Time Adaptation**
+- **Interactive Web Interface**
 
-- **Newer models** (GPT, T5)
-- **Multilingual detection**
-- **Real-time adaptation**
-- **Interactive web interface**
-
-## 📞 Support
-
-For any questions or issues:
-- Check GPU/CPU configuration
-- Ensure all dependencies are installed
-- Review training logs
-
-## 🏷️ Versions
-
-- **Transformers:** 4.52.4
-- **TensorFlow:** Compatible with installed version
-- **PyTorch:** Stable version recommended
-
-## 📚 Code Structure
-
-### Main Components
-- **Data preprocessing** for both LSTM and BERT
-- **Custom LSTM architecture** implementation
-- **BERT fine-tuning** with DistilBERT
-- **Visualization functions** without subplots
-- **Comprehensive evaluation** metrics
-
-## 🚀 Getting Started
-
-1. **Clone the repository**
-2. **Install dependencies** from requirements
-3. **Run the main notebook** `main.ipynb`
-4. **Review results** and visualizations
-5. **Deploy the best model** (BERT recommended)
 
 ## 📊 Model Performance Analysis
 
-### BERT Advantages:
-- Higher overall accuracy (98.21% vs 97.22%)
-- Better F1-Score (0.9301 vs 0.8848)
-- Significantly higher recall (89.26% vs 79.87%)
-- Better at detecting positive cases
+### Advantages of BERT:
 
-### LSTM Advantages:
-- Slightly higher precision (99.17% vs 97.08%)
-- Fewer false positives when predicting spam
+- Higher Overall Accuracy (98.21% vs. 97.22%)
+- Better F1 Score (0.9301 vs. 0.8848)
+- Significantly Higher Recall (89.26% vs. 79.87%)
+- Better Detection of Positive Cases
+  
+### Advantages of LSTM:
 
+- Slightly Higher Accuracy (99.17% vs. 97.08%)
+- Fewer false positives for spam prediction
+  
 ### Recommendation:
-Choose **BERT** for optimal overall performance, especially if detecting maximum spam cases is critical.
+Choose **BERT** for optimal overall performance, especially if detecting as many spam cases as possible is critical.
 
 ---
-
 ## 👤 Author
-
-Project by **Andriana**  
+**Andriana's Project**
 🔗 GitHub: [https://github.com/Andrianiniaina/0-DeepLearning-Project]
