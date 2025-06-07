@@ -213,4 +213,4 @@ Choose **BERT** for optimal overall performance, especially if detecting maximum
 ## 👤 Author
 
 Project by **Andriana**  
-🔗 GitHub: [https://github.com/Andrianiniaina/0-Machine-Learning-Projects]
+🔗 GitHub: [https://github.com/Andrianiniaina/0-DeepLearning-Project]
