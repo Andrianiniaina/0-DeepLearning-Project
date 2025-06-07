@@ -66,7 +66,7 @@ The The project includes several visualizations:
 - Confusion matrices for each model
 - Comparison graphs of metrics
 - Performance trends during training
-- 
+  
 ### Main features
 
 ## 📋 Detailed features
